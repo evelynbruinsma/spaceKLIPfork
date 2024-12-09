@@ -2104,7 +2104,7 @@ class ImageTools():
     def blur_frames(self,
                     fact='auto',
                     types=['SCI', 'SCI_BG', 'REF', 'REF_BG'],
-		    overblur = True,
+                    overblur = True,
                     subdir='blurred'):
         """
         Blur frames with a Gaussian filter.
@@ -2178,8 +2178,8 @@ class ImageTools():
                             wave_min = self.database.obs[key]['CWAVEL'][j] - self.database.obs[key]['DWAVEL'][j]  # micron
                             fwhm_current = wave_min * 1e-6 / diam * 180. / np.pi * 3600. / self.database.obs[key]['PIXSCALE'][j]  # pix
                             fwhm_desired = 2.3  # pix; see, e.g., Pawley 2006
-			    if overblur:
-                            	fwhm_desired *= 1.5  # go to 1.5 times the theoretically required bluring to safely avoid numerical ringing effects
+                            if overblur:
+                                fwhm_desired *= 1.5  # go to 1.5 times the theoretically required bluring to safely avoid numerical ringing effects
                             fact_temp = np.sqrt(fwhm_desired**2 - fwhm_current**2)
                             fact_temp /= np.sqrt(8. * np.log(2.))  # fix from Marshall
                         if str(fact_temp) == 'fix23':
