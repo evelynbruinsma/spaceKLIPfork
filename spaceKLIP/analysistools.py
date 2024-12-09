@@ -52,11 +52,6 @@ import logging
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
-<<<<<<< HEAD
-#TEST 
-=======
-# TEST
->>>>>>> cf05e061ffa17de98050dc242bb00d6acebb0046
 
 # =============================================================================
 # MAIN
