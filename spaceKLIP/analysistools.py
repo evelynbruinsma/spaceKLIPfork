@@ -1095,6 +1095,7 @@ class AnalysisTools():
                                        'APPMAG_ERR',
                                        'MSTAR',
                                        'MSTAR_ERR',
+                                       'FILTER'
                                        'SNR',
                                        'LN(Z/Z0)',
                                        'TP_CORONMSK',
@@ -1125,6 +1126,7 @@ class AnalysisTools():
                                        'float',
                                        'float',
                                        'float',
+                                       'str',
                                        'float',
                                        'float',
                                        'float',
@@ -1157,6 +1159,7 @@ class AnalysisTools():
                                        'APPMAG_ERR',
                                        'MSTAR',
                                        'MSTAR_ERR',
+                                       'FILTER',
                                        'SNR',
                                        'LN(Z/Z0)',
                                        'TP_CORONMSK',
@@ -1181,6 +1184,7 @@ class AnalysisTools():
                                        'float',
                                        'float',
                                        'float',
+                                       'str',
                                        'float',
                                        'float',
                                        'float',
@@ -1650,6 +1654,7 @@ class AnalysisTools():
                                              appmag_err,  # mag
                                              mstar[filt],  # mag
                                              mstar_err_temp,  # mag
+                                             filt,
                                              np.nan,
                                              np.nan,
                                              scale_factor_avg,
@@ -1682,6 +1687,7 @@ class AnalysisTools():
                                              appmag_err,  # mag
                                              mstar[filt],  # mag
                                              mstar_err_temp,  # mag
+                                             filt,
                                              np.nan,
                                              np.nan,
                                              scale_factor_avg,
@@ -1784,6 +1790,7 @@ class AnalysisTools():
                                          appmag_err,  # mag
                                          mstar[filt],  # mag
                                          mstar_err_temp,  # mag
+                                         filt,
                                          np.nan,
                                          evidence_ratio,
                                          scale_factor_avg,
